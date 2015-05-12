@@ -1,8 +1,8 @@
-class CreateGambars < ActiveRecord::Migration
+	class CreateGambars < ActiveRecord::Migration
   def change
     create_table :gambars do |t|
       t.string :title
-      t.string :path
+      t.string :content
 
       t.timestamps
     end

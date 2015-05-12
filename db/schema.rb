@@ -11,13 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150310050000) do
+ActiveRecord::Schema.define(version: 20150414053038) do
 
   create_table "gambars", force: true do |t|
     t.string   "title"
-    t.string   "path"
+    t.string   "content"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "nama_gambar_file_name"
+    t.string   "nama_gambar_content_type"
+    t.integer  "nama_gambar_file_size"
+    t.datetime "nama_gambar_updated_at"
+    t.string   "status"
   end
 
 end
